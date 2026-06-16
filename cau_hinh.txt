@@ -1,0 +1,95 @@
+# ============================================================
+#  FILE CAU HINH  -  Cong cu Tong hop Bao gia (Cubic Architects)
+# ============================================================
+# Muc dich: cho phep chinh mot vai thiet lap MA KHONG can mo
+# file chuong trinh (bao_gia_index.py).
+#
+# CACH DUNG:
+#   1. Mo file nay bang Notepad (hoac trinh soan thao bat ky).
+#   2. Sua noi dung trong cac muc ben duoi, roi LUU LAI (Ctrl + S).
+#   3. Lan chay sau, chuong trinh se tu ap dung.
+#
+# LUU Y QUAN TRONG:
+#   - Dat file nay CUNG THU MUC voi file "bao_gia_index.py".
+#   - Neu xoa / doi ten file nay, chuong trinh VAN CHAY binh thuong
+#     voi thiet lap mac dinh co san.
+#   - Dong bat dau bang dau  #  la dong GHI CHU (chuong trinh bo qua).
+#   - KHONG xoa cac dong tieu de trong [ngoac vuong].
+#   - Nhieu muc tren cung 1 dong thi phan tach bang dau phay  ( , ).
+# ============================================================
+
+
+# ------------------------------------------------------------
+# [THONG TIN]  --  Tieu de va thong tin du an (hien o dau bao cao)
+# ------------------------------------------------------------
+# De trong phan ben phai dau "=" neu chua co thong tin (vd: chi hien "DỰ ÁN:").
+# Nhung dong nay GIU NGUYEN qua moi lan chay, khong bi mat khi chay lai.
+[THONG TIN]
+Tiêu đề = DANH MỤC BÁO GIÁ
+Dự án =
+Công trình =
+Địa điểm =
+
+
+# ------------------------------------------------------------
+# [DANH MUC]  --  Danh sach cac nhom hang muc lon
+# ------------------------------------------------------------
+# Moi dong co dang:   so | Ten hien thi trong bao cao | dac biet?
+#   - "so": khop voi so o dau ten thu muc (vd thu muc "3. Ket cau" -> so 3).
+#   - "Ten hien thi": ten CO DAU, dep, se in ra bao cao (vi du: Ket cau -> "Kết cấu").
+#   - "dac biet?": ghi  co  cho nhom I va II (chuong trinh se lay ten thu muc
+#       dien vao cot "Ten cong ty"); cac nhom con lai ghi  khong .
+# Co the them / bot dong neu du an khac co nhieu hoac it nhom hon.
+[DANH MUC]
+1  | Công bố giá     | co
+2  | Cước vận chuyển | co
+3  | Kết cấu         | khong
+4  | Kiến trúc       | khong
+5  | Chống mối       | khong
+6  | Điện            | khong
+7  | Điện nhẹ        | khong
+8  | CTN             | khong
+9  | DHTG            | khong
+10 | PCCC            | khong
+11 | BG Thang may    | khong
+12 | Hạ Tầng         | khong
+
+
+# ------------------------------------------------------------
+# [CHON]  --  Cac cach go duoc hieu la "Chọn"
+# ------------------------------------------------------------
+# Vi du nhan vien go "c" hoac "co" hoac "x" -> bao cao deu in ra "Chọn".
+[CHON]
+chọn, chon, c, co, x, v, ok
+
+
+# ------------------------------------------------------------
+# [KHONG CHON]  --  Cac cach go duoc hieu la "Không chọn"
+# ------------------------------------------------------------
+[KHONG CHON]
+không chọn, khong chon, ko chon, ko, k, không, khong, ko dùng, k dùng
+
+
+# ------------------------------------------------------------
+# [BO TIEN TO]  --  Cac chu o DAU ten hang muc se duoc tu dong bo
+# ------------------------------------------------------------
+# Vi du ten file "Bao gia Tu dien @ ..." -> cot Noi dung hien gon con "Tu dien".
+# (Khong phan biet chu hoa / chu thuong / dau.)
+[BO TIEN TO]
+báo giá, bảng giá, bg
+
+
+# ------------------------------------------------------------
+# [DUOI FILE]  --  Cac loai file duoc DOC (dung duoi moi doc)
+# ------------------------------------------------------------
+# Cac file co duoi khac (zip, file ky thuat, Thumbs.db ...) tu dong bo qua.
+[DUOI FILE]
+pdf, xls, xlsx, xlsm, doc, docx, jpg, jpeg, png, ppt, pptx
+
+
+# ------------------------------------------------------------
+# [TUY CHON]  --  Bat / tat vai chinh sua tu dong  (ghi  co  hoac  khong)
+# ------------------------------------------------------------
+[TUY CHON]
+Tu dong doi "Cong ty" thanh "Công ty" = co
+Tu dong viet hoa chu cai dau cua hang muc = co
